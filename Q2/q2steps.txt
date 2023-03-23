@@ -1,0 +1,17 @@
+Q2. EC2 INSTANCE FOR REACTJS APPLICATION AND DEPLOY THE
+APPLICATION AND PROVIDE PUBLIC IP FOR IT
+->Open EC2 and go to instances.
+->Now, click on the launch instance and enter a name for the instance.
+->Here, I named it “react”.
+->Now, select Ubuntu as AMI(Amazon Machine Image) and select t2
+micro.
+->Select auto assign public ip.
+->We can keep the network settings as its default one.
+->If we wish to change the network settings, then we can do changes
+too.
+->Now connect the instance.
+->Now, run the command sudo apt-get install nodejs.
+->This command will install the nodejs
+->Now, run the command "npm i"
+->Now, copy  the public ip and paste the copied ip along with port in new tab.
+->Then, it indicates that we have created an instance and deployed the application.

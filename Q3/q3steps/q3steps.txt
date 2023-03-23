@@ -1,0 +1,36 @@
+Q3. CREATE AN RDS CONNECTION WITH EC2 INSTANCE AND USE IT
+TO CREATE AN SQL DATABASE AND A SAMPLE TABLE
+*DATABASE CREATION:
+->Go to RDS and click on databases and create a new database.
+->Select mysql and free tier.
+->Leave the username as its default i.e., admin or we can change it if it is
+required.
+->Now, create a password for the database and re-enter the password to
+confirm it.
+->When coming to the security group, select the option “create a new
+security group and give a name to it”.
+->Then, click on create database. Now, the database will be created but it
+takes some time for its creation.
+->As the database is created, copy the endpoint of the database which
+will be used furtherly.
+->Now, it's time to create an ec2 instance.
+
+
+*EC2 INSTANCE CREATION:
+->Open EC2 service and go to instances.
+->Click on the launch instance and enter the name which we want to
+give for our instance.
+->Select Ubuntu as AMI(Amazon Machine Image) and then select t2
+micro .
+->When coming to the security group, select the option “add existing
+security group”.
+->Then, it will show all the security groups which were created
+previously, select the security group which we have created earlier at
+the time of database creation.
+->Now, launch the instance and then open the security group and open
+edit inbound rules.
+->Add a rule and select all traffic and anywhere options.
+->Now, connect the instance and run the following commands.
+->Now, create a database and create a table using sql commands.
+->Now, insert the values (Name, Branch) into the created table(student
+table) using sql commands.

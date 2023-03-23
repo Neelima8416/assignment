@@ -1,0 +1,27 @@
+Q4.CREATE AN S3 BUCKET AND DEPLOY THE REACTJS STATIC
+APPLICATION ON IT
+
+->Firstly, clone the Reactjs static application folder.
+->Now, create a bucket and the bucket name should be a valid one.
+->Now, as the folder is an application, it can be uploaded into a s3
+bucket for static website hosting directly.
+->So, we need to create a build folder by using the command “npm run
+build”.
+->Before using this command, make sure that our system has a nodejs
+application.
+->If the local system does not have nodejs application, then download it
+and then install the nodejs application.
+->Now, go to command prompt via react application folder.
+->Enter “code .” it will lead you to vs code.
+->Now, open the terminal and run the following commands:
+  *npm i
+  *npm run build
+->Then, the build folder will be created.
+->Now, upload all the files and folders which are present in the build
+folder into s3 bucket(acbu).
+->Now, enable ACLs, and make all the objects as public.
+->Then, go to properties of bucket and enable static website hosting and
+enter index.html over there.
+->Now, copy the static website URL and open in another tab.
+
+URL: http://acbu.s3-website-us-east-1.amazonaws.com
